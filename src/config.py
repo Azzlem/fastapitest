@@ -12,4 +12,4 @@ DB_NAME = os.getenv("DB_NAME")
 
 DATABASE_URL = f"postgresql+asyncpg://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 
-
+print(DATABASE_URL)
