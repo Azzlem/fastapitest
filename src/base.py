@@ -8,7 +8,7 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from src.config import DATABASE_URL
 
 
-engine = create_async_engine("postgresql+asyncpg://postgres:postgres@localhost:5432/abc")
+engine = create_async_engine(DATABASE_URL)
 async_session_maker = async_sessionmaker(engine, expire_on_commit=False)
 
 
